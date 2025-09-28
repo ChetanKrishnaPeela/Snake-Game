@@ -1,0 +1,32 @@
+{
+  "name": "snake-electron-game",
+  "version": "1.0.0",
+  "description": "A classic Snake game built with Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "Snake",
+    "Game"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.yourcompany.snakegame",
+    "productName": "SnakeGame",
+    "mac": {
+      "category": "public.app-category.games",
+      "target": "dmg"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
